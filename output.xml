@@ -1,73 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.10.9 on darwin)" generated="20230202 10:06:12.579" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.10.9 on darwin)" generated="20230202 11:18:27.072" rpa="false" schemaversion="3">
 <suite id="s1" name="First Trial" source="/Users/kennethc@capc.com.sg/first_trial">
 <kw name="Open Website Of Whatever Project" library="resources" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${test_page}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230202 10:06:12.665" level="INFO">Opening browser 'Chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
-<status status="PASS" starttime="20230202 10:06:12.665" endtime="20230202 10:06:23.178"/>
+<msg timestamp="20230202 11:18:27.149" level="INFO">Opening browser 'Chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<status status="PASS" starttime="20230202 11:18:27.149" endtime="20230202 11:18:39.527"/>
 </kw>
-<status status="PASS" starttime="20230202 10:06:12.665" endtime="20230202 10:06:23.178"/>
+<status status="PASS" starttime="20230202 11:18:27.149" endtime="20230202 11:18:39.528"/>
 </kw>
 <suite id="s1-s1" name="001 Tracks" source="/Users/kennethc@capc.com.sg/first_trial/001_tracks.robot">
 <test id="s1-s1-t1" name="Test Page Validity" line="11">
 <kw name="Connect To Python" library="TestRobot">
 <var>${user}</var>
 <var>${pass}</var>
-<msg timestamp="20230202 10:06:23.181" level="INFO">${user} = student</msg>
-<msg timestamp="20230202 10:06:23.181" level="INFO">${pass} = Password123</msg>
-<status status="PASS" starttime="20230202 10:06:23.181" endtime="20230202 10:06:23.181"/>
+<msg timestamp="20230202 11:18:39.531" level="INFO">${user} = student</msg>
+<msg timestamp="20230202 11:18:39.531" level="INFO">${pass} = Password123</msg>
+<status status="PASS" starttime="20230202 11:18:39.531" endtime="20230202 11:18:39.531"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230202 10:06:28.182" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230202 10:06:23.181" endtime="20230202 10:06:28.183"/>
+<msg timestamp="20230202 11:18:44.533" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230202 11:18:39.531" endtime="20230202 11:18:44.534"/>
 </kw>
 <doc>Testing the Login</doc>
-<status status="PASS" starttime="20230202 10:06:23.180" endtime="20230202 10:06:28.184"/>
+<status status="PASS" starttime="20230202 11:18:39.531" endtime="20230202 11:18:44.534"/>
 </test>
 <test id="s1-s1-t2" name="Test Login" line="19">
 <kw name="Connect To Python" library="TestRobot">
 <var>${user}</var>
 <var>${pass}</var>
-<msg timestamp="20230202 10:06:28.187" level="INFO">${user} = student</msg>
-<msg timestamp="20230202 10:06:28.187" level="INFO">${pass} = Password123</msg>
-<status status="PASS" starttime="20230202 10:06:28.186" endtime="20230202 10:06:28.187"/>
+<msg timestamp="20230202 11:18:44.537" level="INFO">${user} = student</msg>
+<msg timestamp="20230202 11:18:44.538" level="INFO">${pass} = Password123</msg>
+<status status="PASS" starttime="20230202 11:18:44.537" endtime="20230202 11:18:44.538"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="username"]</arg>
 <arg>${user}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230202 10:06:28.188" level="INFO">Typing text 'student' into text field '//*[@id="username"]'.</msg>
-<status status="PASS" starttime="20230202 10:06:28.187" endtime="20230202 10:06:28.653"/>
+<msg timestamp="20230202 11:18:44.540" level="INFO">Typing text 'student' into text field '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20230202 11:18:44.538" endtime="20230202 11:18:44.986"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="password"]</arg>
 <arg>${pass}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230202 10:06:28.653" level="INFO">Typing text 'Password123' into text field '//*[@id="password"]'.</msg>
-<status status="PASS" starttime="20230202 10:06:28.653" endtime="20230202 10:06:28.749"/>
+<msg timestamp="20230202 11:18:44.987" level="INFO">Typing text 'Password123' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20230202 11:18:44.986" endtime="20230202 11:18:45.082"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="submit"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230202 10:06:28.749" level="INFO">Clicking element '//*[@id="submit"]'.</msg>
-<status status="PASS" starttime="20230202 10:06:28.749" endtime="20230202 10:06:32.752"/>
+<msg timestamp="20230202 11:18:45.083" level="INFO">Clicking element '//*[@id="submit"]'.</msg>
+<status status="PASS" starttime="20230202 11:18:45.082" endtime="20230202 11:18:47.705"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230202 10:06:37.754" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230202 10:06:32.752" endtime="20230202 10:06:37.754"/>
+<msg timestamp="20230202 11:18:52.705" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230202 11:18:47.705" endtime="20230202 11:18:52.706"/>
 </kw>
 <doc>Testing the Login 2</doc>
-<status status="PASS" starttime="20230202 10:06:28.185" endtime="20230202 10:06:37.755"/>
+<status status="PASS" starttime="20230202 11:18:44.536" endtime="20230202 11:18:52.707"/>
 </test>
 <doc>Template robot suite</doc>
-<status status="PASS" starttime="20230202 10:06:23.178" endtime="20230202 10:06:37.757"/>
+<status status="PASS" starttime="20230202 11:18:39.528" endtime="20230202 11:18:52.709"/>
+</suite>
+<suite id="s1-s2" name="002 Tera" source="/Users/kennethc@capc.com.sg/first_trial/002_tera.robot">
+<test id="s1-s2-t1" name="Test Page Validity test page 2" line="11">
+<kw name="Connect To Python" library="TestRobot">
+<var>${user}</var>
+<var>${pass}</var>
+<msg timestamp="20230202 11:18:52.731" level="INFO">${user} = student</msg>
+<msg timestamp="20230202 11:18:52.731" level="INFO">${pass} = Password123</msg>
+<status status="PASS" starttime="20230202 11:18:52.731" endtime="20230202 11:18:52.731"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230202 11:18:57.731" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230202 11:18:52.731" endtime="20230202 11:18:57.732"/>
+</kw>
+<doc>Testing the Login</doc>
+<status status="PASS" starttime="20230202 11:18:52.730" endtime="20230202 11:18:57.732"/>
+</test>
+<test id="s1-s2-t2" name="Test Login 2nd test file" line="19">
+<kw name="Connect To Python" library="TestRobot">
+<var>${user}</var>
+<var>${pass}</var>
+<msg timestamp="20230202 11:18:57.735" level="INFO">${user} = student</msg>
+<msg timestamp="20230202 11:18:57.735" level="INFO">${pass} = Password123</msg>
+<status status="PASS" starttime="20230202 11:18:57.735" endtime="20230202 11:18:57.735"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="username"]</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230202 11:18:57.737" level="INFO">Typing text 'student' into text field '//*[@id="username"]'.</msg>
+<msg timestamp="20230202 11:18:58.227" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230202 11:18:58.228" level="FAIL">Element with locator '//*[@id="username"]' not found.</msg>
+<status status="FAIL" starttime="20230202 11:18:57.736" endtime="20230202 11:18:58.230"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230202 11:18:58.230" endtime="20230202 11:18:58.230"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230202 11:18:58.230" endtime="20230202 11:18:58.230"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230202 11:18:58.230" endtime="20230202 11:18:58.230"/>
+</kw>
+<doc>Testing the Login 2</doc>
+<status status="FAIL" starttime="20230202 11:18:57.733" endtime="20230202 11:18:58.231">Element with locator '//*[@id="username"]' not found.</status>
+</test>
+<doc>Template robot suite</doc>
+<status status="FAIL" starttime="20230202 11:18:52.712" endtime="20230202 11:18:58.231"/>
 </suite>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn" type="TEARDOWN">
 <arg>Suite shutdown</arg>
@@ -75,23 +132,24 @@
 <kw name="Suite shutdown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230202 10:06:37.760" endtime="20230202 10:06:37.849"/>
+<status status="PASS" starttime="20230202 11:18:58.232" endtime="20230202 11:18:58.336"/>
 </kw>
-<status status="PASS" starttime="20230202 10:06:37.760" endtime="20230202 10:06:37.849"/>
+<status status="PASS" starttime="20230202 11:18:58.232" endtime="20230202 11:18:58.336"/>
 </kw>
-<status status="PASS" starttime="20230202 10:06:37.760" endtime="20230202 10:06:37.849"/>
+<status status="PASS" starttime="20230202 11:18:58.231" endtime="20230202 11:18:58.336"/>
 </kw>
-<status status="PASS" starttime="20230202 10:06:12.580" endtime="20230202 10:06:37.849"/>
+<status status="FAIL" starttime="20230202 11:18:27.073" endtime="20230202 11:18:58.336"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="First Trial">First Trial</stat>
+<stat pass="3" fail="1" skip="0" id="s1" name="First Trial">First Trial</stat>
 <stat pass="2" fail="0" skip="0" id="s1-s1" name="001 Tracks">First Trial.001 Tracks</stat>
+<stat pass="1" fail="1" skip="0" id="s1-s2" name="002 Tera">First Trial.002 Tera</stat>
 </suite>
 </statistics>
 <errors>

@@ -23,12 +23,12 @@ Test Login 2nd test file
     # Open Browser    ${test_page}    ${browser} 
     # Click Element    xpath://*[@id="username"]
     # Input Text    //*[@id="username"]    student
-    Input Text    //*[@id="username"]    ${user}
+    # Input Text    //*[@id="username"]    ${user}
 
     # Input Text    //*[@id="password"]    Password123
-    Input Text    //*[@id="password"]    ${pass}
+    # Input Text    //*[@id="password"]    ${pass}
 
-    Click Element    //*[@id="submit"]
+    # Click Element    //*[@id="submit"]
     Sleep    5s
 
 *** Keywords ***
