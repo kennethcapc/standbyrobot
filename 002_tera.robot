@@ -8,7 +8,7 @@ ${browser}    Chrome
 ${test_page}    https://practicetestautomation.com/practice-test-login/
 *** Test Cases ***
 
-Test Page Validity test page 2
+Test Trial 2
    [Documentation]    Testing the Login
     ${user}    ${pass} =    Connect To Python
     # ${dir} =    Current Directory
@@ -16,7 +16,7 @@ Test Page Validity test page 2
     # Open Browser    ${test_page}    ${browser} 
     Sleep    5s
 
-Test Login 2nd test file
+Test Trial 3
     [Documentation]    Testing the Login 2
     ${user}    ${pass} =    Connect To Python
     # Create Webdriver    ${browser}     executable_path="./chromedriver.exe"
