@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.9 on darwin)" generated="20230202 11:17:06.629" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="/Users/kennethc@capc.com.sg/.vscode/extensions/robocorp.robotframework-lsp-1.8.0/src/robotframework_ls/vendored/robotframework_interactive/robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Connect To Python">
+<var>${user}</var>
+<var>${pass}</var>
+<msg timestamp="20230202 11:17:07.383" level="FAIL">No keyword with name 'Connect To Python' found.</msg>
+<status status="FAIL" starttime="20230202 11:17:07.383" endtime="20230202 11:17:07.383"/>
+</kw>
+<kw name="Input Text">
+<arg>//*[@id="username"]</arg>
+<arg>${user}</arg>
+<status status="NOT RUN" starttime="20230202 11:17:07.385" endtime="20230202 11:17:07.385"/>
+</kw>
+<kw name="Input Text">
+<arg>//*[@id="password"]</arg>
+<arg>${pass}</arg>
+<status status="NOT RUN" starttime="20230202 11:17:07.385" endtime="20230202 11:17:07.385"/>
+</kw>
+<kw name="Click Element">
+<arg>//*[@id="submit"]</arg>
+<status status="NOT RUN" starttime="20230202 11:17:07.386" endtime="20230202 11:17:07.386"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230202 11:17:07.386" endtime="20230202 11:17:07.387"/>
+</kw>
+<status status="PASS" starttime="20230202 11:17:06.638" endtime="20230202 11:17:18.144"/>
+</kw>
+<status status="PASS" starttime="20230202 11:17:06.638" endtime="20230202 11:17:18.145"/>
+</test>
+<status status="PASS" starttime="20230202 11:17:06.630" endtime="20230202 11:17:18.145"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
