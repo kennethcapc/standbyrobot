@@ -17,7 +17,7 @@ Test Page Validity
     Sleep    5s
 
 Test Login
-    [Documentation]    Testing the Login
+    [Documentation]    Testing the Login 2
     ${user}    ${pass} =    Connect To Python
     # Create Webdriver    ${browser}     executable_path="./chromedriver.exe"
     # Open Browser    ${test_page}    ${browser} 
