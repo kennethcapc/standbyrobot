@@ -11,7 +11,7 @@ Library    ../TestRobot.py
 
 
 *** Variables ***
-${browser}    Chrome
+${browser}    headlessChrome
 ${test_page}    https://practicetestautomation.com/practice-test-login/
 # *** Variables ***
 
